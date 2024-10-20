@@ -23,8 +23,10 @@ async function selfpage(){
                 </div>
             </div>
             <div class="popup-od-inf">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, itaque  iusto quisquam!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit!
             </div>
+            <div class="buy-container"><a class="popup-buy" href="#"><b>Заказать</b></a></div>
+
         `
     }
     let selfBody = document.querySelector(".selfBody")
@@ -65,7 +67,7 @@ async function selfpage(){
     let cardCondRight = document.querySelector(".right")
     let cardCondLeft = document.querySelector(".left")
     let key; // условие ? выражение1 : выражение2 cont.cakes: [{}, {}]
-    let a = 12;
+    let a = 15;
     for(key = 0; key < content.cakes.length; key += 1){
         if (key%2 == 0){
             cardCondRight.innerHTML += `
