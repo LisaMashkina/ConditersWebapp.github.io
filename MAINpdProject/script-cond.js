@@ -72,8 +72,5 @@ async function getResponce(){
 
 }
 
-
-]
-
 getResponce()
 
