@@ -1,4 +1,3 @@
-
 let popup = document.querySelector(".popup-js")
 
 function closePopup(){
@@ -8,7 +7,6 @@ function closePopup(){
 async function getResponce(){
     let response = await fetch('https://jsonplaceholder.typicode.com/photos')
     var content = await response.json()
-    // var content = result
     function openPopup(){
         key = content[this.id]
         let popupJS = document.querySelector(".popup")
@@ -30,14 +28,11 @@ async function getResponce(){
         `
     }
 
-    
     content = content.splice(0, 10)
     let cardCondRight = document.querySelector(".right")
     let cardCondLeft = document.querySelector(".left")
-    
-    let key; // условие ? выражение1 : выражение2
-    let a = 12;
-    for(key = 0; key < content.length; key += 1){
+    let a = 15;
+    for(let key = 0; key < content.length; key += 1){
         if (key%2 == 0){
             cardCondRight.innerHTML += `
             <div id="${key}">
@@ -64,7 +59,6 @@ async function getResponce(){
             `
         }
     }
-
     for(key = 0; key < content.length; key += 1){
         elem = document.getElementById(key)
         elem.addEventListener('click', openPopup)
@@ -72,6 +66,4 @@ async function getResponce(){
 
 }
 
-
 getResponce()
-

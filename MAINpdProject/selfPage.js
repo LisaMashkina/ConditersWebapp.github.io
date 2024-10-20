@@ -5,8 +5,6 @@ function closePopup(){
 }
 
 async function selfpage(){
-    // let response = await fetch('https://osetiaalaniapum.ru/aa')
-    // var content = await response.json()
     var content = res
     function openPopup(){
         key = content.cakes[this.id]
@@ -22,7 +20,7 @@ async function selfpage(){
                 </div>
             </div>
             <div class="popup-od-inf">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit!
+                ${key.desc}
             </div>
             <div class="buy-container"><a class="popup-buy" href="#"><b>Заказать</b></a></div>
 
@@ -58,14 +56,14 @@ async function selfpage(){
         `
     }
 
-    if (content.inst){
+    if (content.exp){
         socialMedia.innerHTML += `
-            <p>Опыт работы: ${content.inst} </p>
+            <p>Опыт работы: ${content.exp} </p>
         `
     }
     let cardCondRight = document.querySelector(".right")
     let cardCondLeft = document.querySelector(".left")
-    let key; // условие ? выражение1 : выражение2 cont.cakes: [{}, {}]
+    let key;
     let a = 15;
     for(key = 0; key < content.cakes.length; key += 1){
         if (key%2 == 0){
@@ -73,7 +71,7 @@ async function selfpage(){
             <div id="${key}">
               <div class="card">
                 <img src="${content.cakes[key].photo}" class="card-img-top" alt="mew">
-                <div class="card-body" style="ttext-align: center;">
+                <div class="card-body" style="text-align: center;">
                   <p class="card-text">${content.cakes[key].name.length < a? content.cakes[key].name.slice(0,a): content.cakes[key].name.slice(0,a) + '...' }</p>
                 </div>
               </div>
@@ -86,7 +84,7 @@ async function selfpage(){
             <div id="${key}">
               <div class="card">
                 <img src="${content.cakes[key].photo}" class="card-img-top" alt="mew">
-                <div class="card-body">
+                <div class="card-body" style="text-align: center;">
                   <p class="card-text">${content.cakes[key].name.length < a? content.cakes[key].name.slice(0,a): content.cakes[key].name.slice(0,a) + '...' }</p>
                 </div>
               </div>
@@ -105,7 +103,7 @@ async function selfpage(){
 res = {
     'img': 'static/img/cat.jpg',
     'name': 'Анна Малюгина',
-    'inst': '2 года',
+    'exp': '2 года',
     'desc': 'Кулинария - моё хобби и моя работа, люблю радовать своих заказчиков яркими дизайнами и вкусными тортами!',
     'time': 'dd.mm.yyyy',
     'youtube': 'url',
@@ -119,7 +117,7 @@ res = {
         {
             'name': 'Самолетик',
             'photo': 'static/img/cake2.jpg',
-            'desc': 'Описание торт1'
+            'desc': 'Начинка:Ваниль-клубника 2000/кг. Декор: круговые мазки, безе-облака и пряничный самолётик'
         },
         {
             'name': 'Название торта2',
@@ -143,4 +141,5 @@ res = {
         },
     ]
 }
+
 selfpage()
