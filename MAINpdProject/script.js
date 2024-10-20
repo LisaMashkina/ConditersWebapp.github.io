@@ -1,5 +1,3 @@
-let tg = window.Telegram.WebApp;
-tg.expand();
 
 let popup = document.querySelector(".popup-js")
 
@@ -15,7 +13,6 @@ async function getResponce(){
         key = content[this.id]
         let popupJS = document.querySelector(".popup")
         popup.classList.add('open-popup')
-        console.log(key)
         
         popupJS.innerHTML = `
             <button class="close" type="submit" onclick="closePopup()">Назад</button>
@@ -34,7 +31,6 @@ async function getResponce(){
     }
 
     
-    console.log(content[0])
     content = content.splice(0, 10)
     let cardCondRight = document.querySelector(".right")
     let cardCondLeft = document.querySelector(".left")
