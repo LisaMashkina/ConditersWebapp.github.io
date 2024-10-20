@@ -1,9 +1,6 @@
 async function getResponce(){
     let response = await fetch('https://jsonplaceholder.typicode.com/photos')
     var content = await response.json()
-    function openPopup(){
-        key = content[this.id]
-
     content = content.splice(0, 20)
     let cardCondRight = document.querySelector(".right")
     let cardCondLeft = document.querySelector(".left")
@@ -45,4 +42,3 @@ async function getResponce(){
 }
 
 getResponce()
-
