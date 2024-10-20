@@ -65,7 +65,7 @@ async function selfpage(){
     let cardCondRight = document.querySelector(".right")
     let cardCondLeft = document.querySelector(".left")
     let key; // условие ? выражение1 : выражение2 cont.cakes: [{}, {}]
-    let a = 15;
+    let a = 12;
     for(key = 0; key < content.cakes.length; key += 1){
         if (key%2 == 0){
             cardCondRight.innerHTML += `
