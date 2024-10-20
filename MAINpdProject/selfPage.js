@@ -19,7 +19,6 @@ async function selfpage(){
                 <img src="${key.photo}" alt="..." class="popup-img">
                 <div class="main-popap-inf">
                 <p>${key.name.slice(0, 20)}</p>
-                <a class="bt-to-cond" aria-current="page" href = "#" ">Кондитер</a>
                 </div>
             </div>
             <div class="popup-od-inf">
