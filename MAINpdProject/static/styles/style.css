@@ -1,0 +1,228 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat&display=swap);
+
+body {
+    font-family: 'Montserrat';
+}
+
+
+/* положение главных контейнеров */
+
+.container-fluid { /*в главном контейнере все внизу*/
+    align-items: end;
+}
+
+.navbar { /*в не таком главном контейнере все внизу*/
+    align-items: end;
+    padding-bottom: 0;
+}
+
+section {
+    display: flex;
+    text-align: center;
+}
+
+.nav-div, .main, .navbar {
+    height: 100%; /*высота родительского контейнера*/
+}
+
+
+/* верхняя панелька */
+
+header {
+    height: 75px; /*родительский контейнер*/
+}
+
+.nav-link {
+    color: rgb(105,105,105); /*цвет неактивной ссылки*/
+}
+
+.active {
+    color: black;   /*цвет активной ссылки*/
+}
+
+.bt-main {  /*кнопки верхней панели*/
+    margin: 1em;
+    margin-bottom: 0;
+    padding: 0.4em;
+    border-style:none;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.active-bt {
+    background-color: white; /*цвет активной кнопки*/
+}
+
+.deactive-bt { /*цвет неактивной кнопки*/
+    background-color: rgb(176,176,176);
+}
+
+
+/* карточки */
+
+.col> a {
+    color: rgb(66, 66, 66);
+    text-decoration: none;
+}
+
+.card {
+    cursor: pointer;
+    margin: 10px;
+    margin-top: 40px;
+    border-style: none;
+    border-radius: 15px;
+}
+
+.card-body {
+    background-color: #f0f0f0;
+    border-radius: 0 0 6px 6px;
+    overflow: hidden;
+	/* display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+    line-height: 1.4em;
+    height: 3.8em; */
+}
+
+
+/* стили для окошка popup */
+
+
+.background-dark-popup{
+    display: none;
+    position: fixed;
+    background-color: rgb(0,0,0, 0.3);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.open-popup {
+    display: block;
+}
+
+.popup {
+    width: 350px;
+    height: 350px;
+    background: #e7e7e7;
+    border-radius: 6px;
+    position: absolute;
+    top: 58vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 24px;
+    padding: 35px 20px 0px;
+    z-index: 1000;
+}
+
+/* стили для внутренностей popap */
+.close {
+    border-style: none;
+    border-radius: 6px;
+    background-color:#e7e7e7;
+    position: absolute;
+    font-size: 14px;
+    top: 2%;
+    left: 2%;
+}
+
+.popup-header{
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup-od-inf {
+    font-size: 18px;
+    text-align: left;
+    height: 25%;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.main-popap-inf {
+    /* text-align: left; */
+    display: inline-block;
+    width: 50%;
+    margin-left: 15px;
+    position: relative;
+}
+
+.popup-img {
+    width: 50%;
+    border-radius: 15px;
+}
+
+.bt-to-cond {
+    font-size: 20px;
+    background-color:#9ea0a3;
+    color: white;
+    text-decoration: none;
+    border-style: none;
+    border-radius: 13px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    padding: 4px 8px;
+}
+
+.bt-to-cond:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.buy-container {
+    padding-top: 15px;
+    padding-bottom: 0px;
+    bottom: 0px;
+    left: 50%;
+}
+
+.popup-buy {
+    font-size: 24px;
+    background-color:#6b6d70;
+    color: white;
+    text-decoration: none;
+    border-style: none;
+    border-radius: 11px;
+    padding: 8px 17px;
+
+}
+
+.popup-buy:hover {
+    text-decoration: none;
+    color: white;
+}
+
+/* страничка кондитера */
+.back-butt {
+    padding-left: 22px;
+    padding-top: 15px;
+    border-style: none;
+    background-color: rgb(0, 0, 0, 0);
+}
+.description {
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.main-inf-block {
+    padding: 22px;
+    display: flex;
+}
+
+.photo-profile {
+    width: 50%;
+}
+
+.inf-block {
+    width: 50%;
+}
+
+.photo-profile >img {
+    width: 80%;
+    border-radius: 50%;
+}
+

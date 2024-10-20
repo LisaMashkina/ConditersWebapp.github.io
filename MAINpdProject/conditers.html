@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lalalisa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/styles/style.css">
+</head>
+<body>
+    <header>
+        <nav class="main">
+            <div class="nav-div">
+                <nav class="navbar bg-light">
+                  <form class="container-fluid justify-content-start">
+                    <button class="deactive-bt bt-main"><a class="nav-link" aria-current="page" href="index.html">Изделия</a></button>
+                    <button class="active-bt bt-main"><a class="nav-link active" href="conditers.html">Кондитеры</a></button>
+                  </form>
+                </nav>
+            </div>
+        </nav>
+    </header>
+    <div class="headConditers" style="text-align: center; margin-top: 25px; font-size: 22px;">
+            Кондитеры для вас
+    </div>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col right"></div>
+                <div class="col left"></div>
+            </div>
+        </div>
+        
+        <div class="background-dark-popup popup-js">
+          <div class="popup">
+            <button class="close" type="submit" onclick="closePopup()">Close</button>
+            <div class="popup-header">
+              <img src="static/img/cat.jpg" alt="..." class="popup-img">
+              <div class="main-popap-inf">
+                <p>Название тортика</p>
+                <button class="bt-to-cond">Кондитер</button>
+              </div>
+            </div>
+            <div class="popup-od-inf">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, itaque cumque amet quis iusto quisquam!
+            </div>
+            <div class="buy-container"><a class="popup-buy" href="#">Заказать</a></div>
+          </div>
+        </div>
+    </section>
+
+    <footer>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="script-cond.js"></script>
+    <script src="https://telegram.org/js/telegram-web-up.js"></script>
+</body>
+</html>
