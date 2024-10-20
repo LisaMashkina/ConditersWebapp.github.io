@@ -36,7 +36,7 @@ async function getResponce(){
     let cardCondLeft = document.querySelector(".left")
     
     let key; // условие ? выражение1 : выражение2
-    let a = 15;
+    let a = 12;
     for(key = 0; key < content.length; key += 1){
         if (key%2 == 0){
             cardCondRight.innerHTML += `
