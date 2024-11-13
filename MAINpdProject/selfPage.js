@@ -22,7 +22,7 @@ async function selfpage(){
             <div class="popup-od-inf">
                 ${key.desc}
             </div>
-            <div class="buy-container"><a class="popup-buy" href="#"><b>Заказать</b></a></div>
+            <div class="buy-container"><button class="popup-buy" onclick="send()"><b>Заказать</b></button></div>
 
         `
     }
@@ -64,7 +64,7 @@ async function selfpage(){
     let cardCondRight = document.querySelector(".right")
     let cardCondLeft = document.querySelector(".left")
     let key;
-    let a = 15;
+    let a = 12;
     for(key = 0; key < content.cakes.length; key += 1){
         if (key%2 == 0){
             cardCondRight.innerHTML += `
@@ -100,7 +100,7 @@ async function selfpage(){
 }
 
 
-res = {
+res = { //временные константы, чтобы удобней было пока
     'img': 'static/img/cat.jpg',
     'name': 'Анна Малюгина',
     'exp': '2 года',

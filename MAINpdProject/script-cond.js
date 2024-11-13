@@ -10,7 +10,7 @@ async function getResponce(){
     content = content.splice(0, 20)
     let cardCondRight = document.querySelector(".right")
     let cardCondLeft = document.querySelector(".left")
-    let a = 13;
+    let a = 12;
     for(let key = 0; key < content.length; key += 1){
         if (key%2 == 0){
             cardCondRight.innerHTML += `
